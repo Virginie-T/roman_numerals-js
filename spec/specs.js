@@ -10,5 +10,9 @@ describe('triangulator', function() {
     it("check if the lengths combined could form a triangle in that case : lengths = 2-2-3", function() {
         expect(triangulator(2, 2, 3)).to.equal("isoscele");
     });
+
+    it("check if the lengths combined could form a triangle in that case : lengths = 1-2-3", function() {
+        expect(triangulator(1, 2, 3)).to.equal("scalene");
+    });
     
 });
