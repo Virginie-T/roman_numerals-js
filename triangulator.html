@@ -7,26 +7,33 @@
     <title>Triangulator</title>
 </head>
     <body>
-        <div class='container'>
-            <h1>Triangulator</h1>
+
+        <svg height="550" width="1000">
+        <polygon points="50,50 475,500 900,50" class='triangle' z-index="-1"/>
+        </svg>
+
+        <div id="inside">
+            <h1><span class="glyphicon glyphicon-chevron-right"><strong class='title'>triangulator</strong></span><span class="glyphicon glyphicon-chevron-left"></span></h1>
 
             <form id='form'>
-            <h2>Enter the length of the side of your future triangle</h2>
+            <h3>Enter the length of the side of your future triangle</h3>
                 <div class='form-group'>
-                    <label for='num1'>Enter a number</label>
-                    <input id="num1" type='number'> <br>
-                    <label for='num2'>Enter a number</label>
-                    <input id="num2" type='number'> <br>
-                    <label for='num3'>Enter a number</label>
-                    <input id="num3" type='number'>
+                    <label for='num1'>Enter a number : </label>
+                    <input id="num1" type='number' required> <br>
+                    <label for='num2'>Enter a number : </label>
+                    <input id="num2" type='number' required> <br>
+                    <label for='num3'>Enter a number : </label>
+                    <input id="num3" type='number' required> <br>
                 </div>
-
-                <button type='submit' class='btn btn-success'>Go for it</button>
+                <button type='submit' class='btn btn-default'>Go for it</button>
             </form>
 
             <div id='result'>
-                <p>The roman translation is: <span class='result'></span></p>
+            <hr width="270px" style="margin-top: 30px">
+               <p>Your triangle is : <em><span class='result'></span></em></p>
+               <h1><span class="glyphicon glyphicon-triangle-bottom" ></span></h1>
             </div>
+            
         </div>
     </body>
 </html>
